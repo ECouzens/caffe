@@ -17,10 +17,14 @@
 
 *****************************************
 <<<<<<< HEAD
+<<<<<<< HEAD
 Optimizing Intel® distribution of Caffe*
 =======
 Optimizing Intel® distribution for Caffe*
 >>>>>>> 2fc86660683b2fcef15e31ac066ea5fbe4ee3335
+=======
+Optimizing Intel® distribution for Caffe*
+>>>>>>> origin
 *****************************************
 
 .. Note::
@@ -42,10 +46,14 @@ Introduction
 Caffe is a deep learning framework made with expression, speed, and modularity in mind. It is developed by the Berkeley Vision and Learning Center (`BVLC <http://bvlc.eecs.berkeley.edu/>`_) and by community contributors. `Yangqing Jia <http://daggerfs.com/>`_ created the project during his PhD at UC Berkeley. Caffe is released under the `BSD 2-Clause license <https://github.com/BVLC/caffe/blob/master/LICENSE/>`_.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 These instructions walk throught the configuration steps needed to optimize the Intel® distribution of Caffe* on platforms based on Intel® Xeon® processors code named Skylake. 
 =======
 These instructions walk throught the configuration steps needed to optimize the Intel® distribution for Caffe* on platforms based on Intel® Xeon® processors code named Skylake. 
 >>>>>>> 2fc86660683b2fcef15e31ac066ea5fbe4ee3335
+=======
+These instructions walk throught the configuration steps needed to optimize the Intel® distribution for Caffe* on platforms based on Intel® Xeon® processors code named Skylake. 
+>>>>>>> origin
 
 [[Need an actual processor number here: Skylake processors are: processor family E3-12xx v5 and E3-12xx v5 processors, Xeon E3-12xx v5  Xeon W-21xx Xeon Bronze, Silver, Gold, Platinum]]
 
@@ -64,10 +72,14 @@ Prerequisites
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 The prerequisites for the Intel distribution of Caffe differ depending on the target system's OS. 
 =======
 The prerequisites for the Intel Distribution for Caffe differ depending on the target system's OS. 
 >>>>>>> 2fc86660683b2fcef15e31ac066ea5fbe4ee3335
+=======
+The prerequisites for the Intel Distribution for Caffe differ depending on the target system's OS. 
+>>>>>>> origin
 
 [[these OS-dependent sections are best if they are separate files that we link to in this document (install_yum, install_apt, and install_osx). However, because these procedures are old and need to be reviewed, I've copied the contents of these files below so we can update them as necessary. ]]
 
@@ -319,18 +331,24 @@ Installing Intel MKL-DNN
 [[This section follows the linked OS-dependent dependencies above. We might want to link out to the MKL-DNN and MKL installation instructions instead of duplicating them here.]]
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .. _Note: Intel offers users the choice of using either `Intel MKL-DNN <https://github.com/intel/mklnn/>`_ for developers looking for an open source performance library for Deep Learning applications, or `Intel MKL <https://software.intel.com/en-us/articles/intel-math-kernel-library-intel-mkl-2017-install-guide/>`_ for developers who want a Intel-proprietary computing math library for applications that require maximum performance.
 
 [[Installing MKL and MKL-DNN, can use either, open or closed source. Include prerequisites from existing documention, compiler, python librarires. MKL-DNN supports desktop and Atom processeors; do not have validaton ATM, but some optimizations are available. Our testing focuses on particular configuration, but MKL DNN does support other platforms as described in MKL DNN documentation. ]]
 
 This section elaborates on the installation information presented on the GitHub repository site by providing detailed, step-by-step instructions for installing and building the Intel MKL-DNN library components. The computer you use will require an Intel® processor supporting Intel® Advanced Vector Extensions 2 (Intel® AVX2). Specifically, Intel MKL-DNN is optimized for Intel® Xeon® processors, Intel® Xeon Phi™ processors, and `Intel AVX-512 <https://www.intel.com/content/www/us/en/architecture-and-technology/avx-512-overview.html/>`_.
 =======
+=======
+>>>>>>> origin
 .. _Note: Intel offers users the choice of using either Intel MKL-DNN for developers looking for an open source performance library for Deep Learning applications, or `Intel MKL <https://software.intel.com/en-us/articles/intel-math-kernel-library-intel-mkl-2017-install-guide/>`_ for developers who want a Intel-proprietary computing math library for applications that require maximum performance.
 
 [[Installing MKL and MKL-DNN, can use either, open or closed source. Include prerequisites from existing documention, compiler, python librarires. MKL-DNN supports desktop and Atom processeors; do not have validaton ATM, but some optimizations are available. Our testing focuses on particular configuration, but MKL DNN does support other platforms as described in MKL DNN documentation. ]]
 
 This section elaborates on the installation information presented on the GitHub repository site by providing detailed, step-by-step instructions for installing and building the Intel MKL-DNN library components. The computer you use will require an Intel® processor supporting Intel® Advanced Vector Extensions 2 (Intel® AVX2). Specifically, Intel MKL-DNN is optimized for Intel® Xeon® processors and Intel® Xeon Phi™ processors.
+<<<<<<< HEAD
 >>>>>>> 2fc86660683b2fcef15e31ac066ea5fbe4ee3335
+=======
+>>>>>>> origin
 
 GitHub indicates the software was validated on RedHat* Enterprise Linux* 7; however, the information presented in this tutorial was developed on a system running Ubuntu* 16.04.
 
@@ -508,10 +526,14 @@ Configuration
    [Please confirm the instructions below are correct and complete.]
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 To achieve the best performance with the Intel® distribution of Caffe* on Intel processors please apply the following recommendations:
 =======
 To achieve the best performance with the Intel® Distribution for Caffe* on Intel processors please apply the following recommendations:
 >>>>>>> 2fc86660683b2fcef15e31ac066ea5fbe4ee3335
+=======
+To achieve the best performance with the Intel® Distribution for Caffe* on Intel processors please apply the following recommendations:
+>>>>>>> origin
 
 Hardware / BIOS configuration
 -----------------------------
@@ -557,9 +579,13 @@ We recommend to compile Intel® Distribution of Caffe* with makefile.configurati
 
     CPU_ONLY := 1
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     USE_MKL2017_AS_DEFAULT_ENGINE := 1
 >>>>>>> 2fc86660683b2fcef15e31ac066ea5fbe4ee3335
+=======
+    USE_MKL2017_AS_DEFAULT_ENGINE := 1
+>>>>>>> origin
     BLAS := mkl
 
 Intel® Distribution of Caffe / Hyper-Parameters configuration*
@@ -616,10 +642,14 @@ General performance messages
 ----------------------------
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Contact the Caffe team through the `team GitHub <https://github.com/intel/caffe/issues/>`_. 
 =======
 Contact Caffe team
 >>>>>>> 2fc86660683b2fcef15e31ac066ea5fbe4ee3335
+=======
+Contact Caffe team
+>>>>>>> origin
 
 [MORE INFO?]
 
@@ -627,11 +657,15 @@ Common issues
 -------------
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Contact the Caffe team through the `team GitHub <https://github.com/intel/caffe/issues/>`_. 
 
 =======
 Contact Caffe team for more info here. 
 >>>>>>> 2fc86660683b2fcef15e31ac066ea5fbe4ee3335
+=======
+Contact Caffe team for more info here. 
+>>>>>>> origin
 [MORE INFO?]
 
 
