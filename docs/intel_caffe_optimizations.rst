@@ -542,7 +542,7 @@ Use the LMDB data layer (Using the *Images* layer as data source will result in 
 
 Change the batchsize in prototxt files. With some system configurations, higher batchsize will lead to better results.
 
-The current implementation uses OpenMP threads. By default, the number of OpenMP threads is set to be equal to the number of CPU cores. Each one thread is bound to a single core to achieve best performance results. However, it is possible to use your own configuration by providing the right configuration through the OpenMP environmental variables like ``KMP_AFFINITY``, ``OMP_NUM_THREADS`` or ``GOMP_CPU_AFFINITY``. For single-node systems based on the Intel Xeon Phi™ product family, we recommend using ``OMP_NUM_THREADS = numer_of_cores-2``.
+The current implementation uses OpenMP threads. By default, the number of OpenMP threads is set to be equal to the number of CPU cores. Each thread is bound to a single core to achieve best performance results. However, it is possible to use your own configuration by providing the right configuration through the OpenMP environmental variables like ``KMP_AFFINITY``, ``OMP_NUM_THREADS`` or ``GOMP_CPU_AFFINITY``. For single-node systems based on the Intel Xeon Phi™ product family, we recommend using ``OMP_NUM_THREADS = numer_of_cores-2``.
 
 Additional topologies
 ---------------------
